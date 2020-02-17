@@ -1,4 +1,5 @@
 const axios = require('axios')
+console.log(process.env.OMDB_KEY)
 
 const getRequestPromise = (s, page) => axios.get('http://www.omdbapi.com/', {
   params: {
